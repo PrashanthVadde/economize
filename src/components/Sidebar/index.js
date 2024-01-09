@@ -13,22 +13,23 @@ import "./index.css"
 const Sidebar = () => (
     <>
         <nav class="navbar navbar-expand-lg navbar-light bg-light" id="small-device-nav-bar">
-        <a class="navbar-brand" >Economize</a>
+        <p class="navbar-brand" >Economize</p>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-            <a class="nav-link active" >
+            <p class="nav-link active" id="small-device-options" >
                 Dashboard
                 <span class="sr-only">(current)</span>
-            </a>
-            <a class="nav-link" >Automation</a>
-            <a class="nav-link">Campaigns</a>
-            <a class="nav-link">Popup</a>
-            <a class="nav-link">Live Chat</a>
-            <a class="nav-link">Segments</a>
-            <a class="nav-link">Integrations</a>
+            </p>
+            <p class="nav-link" id="small-device-options">Conversations</p>
+            <p class="nav-link" id="small-device-options">Automation</p>
+            <p class="nav-link" id="small-device-options">Campaigns</p>
+            <p class="nav-link" id="small-device-options">Popup</p>
+            <p class="nav-link" id="small-device-options">Live Chat</p>
+            <p class="nav-link" id="small-device-options">Segments</p>
+            <p class="nav-link" id="small-device-options">Integrations</p>
             </div>
         </div>
         </nav>
@@ -54,7 +55,7 @@ const Sidebar = () => (
 
                 <button type="button" className="side-bar-button" style={{color: "grey", backgroundColor: "transparent",}}>
                     <RiChatSmile2Line size={25} style={{color: "grey"}} />
-                    <p className="side-bar-option">Dashboard</p>
+                    <p className="side-bar-option">Conversations</p>
                 </button>
 
                 <button type="button" className="side-bar-button" style={{color: "grey", backgroundColor: "transparent"}}>

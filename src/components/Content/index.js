@@ -92,7 +92,27 @@ const Content = () => {
                 </div>
             </div>
 
-            <AreaChart width={730} height={250} data={data} id="areaChart"
+            <AreaChart width={330} height={150} data={data} id="smallDeviceChart"
+                margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
+                <defs>
+                    <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="5%" stopColor="#8884d8" stopOpacity={0.8}/>
+                    <stop offset="95%" stopColor="#8884d8" stopOpacity={0}/>
+                    </linearGradient>
+                    <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="5%" stopColor="#82ca9d" stopOpacity={0.8}/>
+                    <stop offset="95%" stopColor="#82ca9d" stopOpacity={0}/>
+                    </linearGradient>
+                </defs>
+                <XAxis dataKey="name" />
+                <YAxis />
+                <CartesianGrid strokeDasharray="3 3" />
+                <Tooltip />
+                <Area type="monotone" dataKey="uv" stroke="#8884d8" fillOpacity={1} fill="url(#colorUv)" />
+                <Area type="monotone" dataKey="pv" stroke="#82ca9d" fillOpacity={1} fill="url(#colorPv)" />
+            </AreaChart>
+
+            <AreaChart width={730} height={250} data={data} id="mediumDeviceChart"
                 margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
                 <defs>
                     <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
@@ -144,12 +164,12 @@ const Content = () => {
                                     <IoCartOutline size={30} />
                                 </div>
                                 <div className="cart-part-text">
-                                    <h1 className="cart-part-title">Abadoned Cart 7 days <FaArrowRight size={20} style={{marginLeft: "6px"}} /> </h1>
-                                    <p className="cart-part-description">4024 sent  124 clicks</p>
+                                    <h1 className="cart-part-title" style={{color: "black"}}>Abadoned Cart 15min </h1>
+                                    <p className="cart-part-description" style={{color: "grey"}}>4024 sent  124 clicks</p>
                                 </div>
                             </div>
                             <div className="amount-part">
-                                <h1 className="bottom-amount">$5,231</h1>
+                                <h1 className="bottom-amount">$24,521</h1>
                                 <p className="bottom-orders-text">41 Orders  150 AOV</p>
                             </div>
                         </div>
@@ -160,31 +180,17 @@ const Content = () => {
                                     <IoCartOutline size={30} />
                                 </div>
                                 <div className="cart-part-text">
-                                    <h1 className="cart-part-title">Abadoned Cart 7 days <FaArrowRight size={20} style={{marginLeft: "6px"}} /> </h1>
-                                    <p className="cart-part-description">4024 sent  124 clicks</p>
+                                    <h1 className="cart-part-title" style={{color: "black"}}>Abadoned Cart 15 min </h1>
+                                    <p className="cart-part-description" style={{color: "grey"}}>4024 sent  124 clicks</p>
                                 </div>
                             </div>
                             <div className="amount-part">
-                                <h1 className="bottom-amount">$5,231</h1>
+                                <h1 className="bottom-amount">$24,521</h1>
                                 <p className="bottom-orders-text">41 Orders  150 AOV</p>
                             </div>
                         </div>
 
-                        <div className="bottom-order" style={{backgroundColor: "transparent"}}>
-                            <div className="cart-part">
-                                <div className="cart-logo">
-                                    <IoCartOutline size={30} />
-                                </div>
-                                <div className="cart-part-text">
-                                    <h1 className="cart-part-title">Abadoned Cart 7 days <FaArrowRight size={20} style={{marginLeft: "6px"}} /> </h1>
-                                    <p className="cart-part-description">4024 sent  124 clicks</p>
-                                </div>
-                            </div>
-                            <div className="amount-part">
-                                <h1 className="bottom-amount">$5,231</h1>
-                                <p className="bottom-orders-text">41 Orders  150 AOV</p>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
 

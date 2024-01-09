@@ -1,0 +1,165 @@
+.nav-bar {
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-bar-emoji-name-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar-emoji-container {
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e06a6afd;
+    border-radius: 20px;
+}
+
+.nav-bar-emoji {
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+}
+
+.nab-bar-person-name-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.nav-bar-person-name {
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.nab-bar-person-status {
+    color: grey;
+    font-family: Roboto;
+    font-size: 10px;
+    font-weight: 400;
+    margin-top: 1px;
+}
+
+.nav-bar-options {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar-option {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    padding: 10px 20px;
+    border: 1px solid #3559E0;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.option-name {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 2px;
+}
+
+.compare-to {
+    font-family: Roboto;
+    font-size: 12px;
+    color: grey;
+}
+
+@media screen and (min-width: 768px) {
+    .nav-bar {
+        height: 12vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .nav-bar-emoji-name-container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav-bar-emoji-container {
+        height: 70px;
+        width: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #e06a6afd;
+        border-radius: 40px;
+    }
+    
+    .nav-bar-emoji {
+        height: 60px;
+        width: 60px;
+        border-radius: 40px;
+    }
+    
+    .nab-bar-person-name-container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+    
+    .nav-bar-person-name {
+        font-size: 30px;
+        font-family: Roboto;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+    
+    .nab-bar-person-status {
+        color: grey;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 1px;
+    }
+    
+    .nav-bar-options {
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .nav-bar-option {
+        display: flex;
+        align-items: center;
+        height: 30px;
+        padding: 10px 20px;
+        border: 1px solid #3559E0;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    
+    .option-name {
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 500;
+        margin-left: 6px;
+    }
+    
+    .compare-to {
+        font-family: Roboto;
+        font-size: 14px;
+        color: grey;
+    }
+}
